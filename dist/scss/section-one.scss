@@ -1,0 +1,125 @@
+@use "sass:map";
+@import 'colors.scss';
+
+.section-one {
+  padding-top: 25px;
+}
+
+.section-one-card-facebook {
+  background-color: map.get($primary-colors, 'facebook');
+  border-radius: 8px;
+  padding-top: 5px;
+
+  .icon-facebook {
+    background-image: url(/images/icon-facebook.svg);
+    width: 20px;
+    height: 20px;
+  }
+
+  .facebook-analytics {
+    color: map.get($primary-colors, 'lime-green');
+  }
+}
+
+.section-one-card-twitter {
+  background-color: map.get($primary-colors, 'twitter');
+  border-radius: 8px;
+  padding-top: 5px;
+
+  .icon-twitter {
+    background-image: url(/images/icon-twitter.svg);
+    width: 20px;
+    height: 17px;
+  }
+
+  .twitter-analytics {
+    color: map.get($primary-colors, 'lime-green');
+  }
+}
+
+.section-one-card-instagram {
+  background-image: map.get($primary-colors, 'instagram');
+  border-radius: 8px;
+  padding-top: 5px;
+
+  .icon-instagram {
+    background-image: url(/images/icon-instagram.svg);
+    width: 20px;
+    height: 20px;
+  }
+
+  .instagram-analytics {
+    color: map.get($primary-colors, 'lime-green');
+  }
+}
+
+.section-one-card-youtube {
+  background-color: map.get($primary-colors, 'youtube');
+  border-radius: 8px;
+  padding-top: 5px;
+
+  .icon-youtube {
+    background-image: url(/images/icon-youtube.svg);
+    width: 20px;
+    height: 20px;
+  }
+
+  .youtube-analytics {
+    color: map.get($primary-colors, 'bright-red');
+  }
+}
+
+.section-content {
+  width: 100%;
+  padding-top: 25px;
+}
+
+.section-one-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: map.get($dark-theme, 'card-background');
+  margin-bottom: 25px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.section-one-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .username {
+    color: map.get($dark-theme, 'sub-text');
+    margin-left: 8px;
+  }
+}
+
+.section-one-card-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .section-one-card-follower-number {
+    color: map.get($dark-theme, 'white-text');
+    font-weight: 700;
+    font-size: 3.5rem;
+  }
+
+  .section-one-card-follower-text {
+    color: map.get($dark-theme, 'sub-text');
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+  }
+}
+
+.section-one-card-bottom {
+  padding-bottom: 25px;
+
+  .section-one-card-analytics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
