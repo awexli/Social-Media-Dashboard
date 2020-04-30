@@ -23,17 +23,6 @@ main {
   display: grid;
 }
 
-header {
-  color: white;
-  display: flex;
-  flex-direction: column;
-
-  .theme-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 .icon-up {
   display: inline-block;
   background-image: url(/images/icon-up.svg);
