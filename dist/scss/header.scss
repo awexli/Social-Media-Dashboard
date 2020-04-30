@@ -4,10 +4,19 @@
 header {
   display: flex;
   flex-direction: column;
+
+  @media only screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .title-wrapper {
   padding-bottom: 20px;
+
+  @media only screen and (min-width: 1200px) {
+    flex-grow: 50;
+  }
 }
 
 .title-subhead {
@@ -19,12 +28,20 @@ header {
   height: 1px;
   background-color: map.get($dark-theme, 'sub-text');
   margin-bottom: 20px;
+
+  @media only screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .theme-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (min-width: 1200px) {
+    flex-grow: 1;
+  }
 }
 
 #theme-name {
@@ -37,6 +54,11 @@ header {
   height: 24px;
   width: 50px;
   border-radius: 25px;
+
+  @media only screen and (min-width: 1920px) {
+    height: 48px;
+    width: 100px;
+  }
 }
 
 .toggle-circle {
@@ -47,4 +69,11 @@ header {
   top: 2px;
   left: 3px;
   border-radius: 50%;
+
+  @media only screen and (min-width: 1920px) {
+    height: 40px;
+    width: 40px;
+    top: 3px;
+    left: 5px;
+  }
 }

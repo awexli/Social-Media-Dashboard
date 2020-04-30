@@ -3,11 +3,23 @@
 
 .section-one {
   padding-top: 25px;
+  padding-bottom: 30px;
+
+  @media only screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    grid-column-gap: 50px;
+  }
 }
 
 .section-one-card {
   border-radius: 8px;
   padding-top: 6px;
+  height: 5%;
 }
 
 .section-one-card-facebook {
@@ -56,6 +68,11 @@
   margin-bottom: 25px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  height: 250px;
+
+  @media only screen and (min-width: 1920px) {
+    height: 350px;
+  }
 }
 
 .section-one-card-top {
@@ -66,6 +83,9 @@
   .username {
     color: map.get($dark-theme, 'sub-text');
     margin-left: 8px;
+    @media only screen and (min-width: 1920px) {
+      margin-left: 12px;
+    }
   }
 }
 
@@ -78,12 +98,20 @@
     color: map.get($dark-theme, 'white-text');
     font-weight: 700;
     font-size: 3.5rem;
+
+    @media only screen and (min-width: 1920px) {
+      font-size: 6.5rem;
+    }
   }
 
   .section-one-card-follower-text {
     color: map.get($dark-theme, 'sub-text');
     text-transform: uppercase;
     letter-spacing: 4.5px;
+
+    @media only screen and (min-width: 1920px) {
+      letter-spacing: 6.5px;
+    }
   }
 }
 

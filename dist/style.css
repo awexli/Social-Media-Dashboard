@@ -2,9 +2,20 @@ header {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (min-width: 1200px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 .title-wrapper {
   padding-bottom: 20px;
+}
+@media only screen and (min-width: 1200px) {
+  .title-wrapper {
+    flex-grow: 50;
+  }
 }
 
 .title-subhead {
@@ -17,11 +28,21 @@ header {
   background-color: #8b97c6;
   margin-bottom: 20px;
 }
+@media only screen and (min-width: 1200px) {
+  .divider {
+    display: none;
+  }
+}
 
 .theme-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (min-width: 1200px) {
+  .theme-wrapper {
+    flex-grow: 1;
+  }
 }
 
 #theme-name {
@@ -35,6 +56,12 @@ header {
   width: 50px;
   border-radius: 25px;
 }
+@media only screen and (min-width: 1920px) {
+  .toggle-wrapper {
+    height: 48px;
+    width: 100px;
+  }
+}
 
 .toggle-circle {
   position: absolute;
@@ -44,6 +71,14 @@ header {
   top: 2px;
   left: 3px;
   border-radius: 50%;
+}
+@media only screen and (min-width: 1920px) {
+  .toggle-circle {
+    height: 40px;
+    width: 40px;
+    top: 3px;
+    left: 5px;
+  }
 }
 
 *,
@@ -59,13 +94,27 @@ body {
   font-weight: 500;
   font-size: 14px;
   background-color: #1e202a;
-  padding: 30px 20px;
+}
+@media only screen and (min-width: 1920px) {
+  body {
+    font-size: 25px;
+  }
 }
 
 main {
   height: 100%;
   width: 100%;
-  display: grid;
+  padding: 30px 20px;
+}
+@media only screen and (min-width: 1200px) {
+  main {
+    padding: 40px 50px 30px 50px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  main {
+    padding: 100px 300px;
+  }
 }
 
 .icon-facebook {
@@ -78,6 +127,11 @@ main {
   color: white;
   font-size: 1.5rem;
   font-weight: 700;
+}
+@media only screen and (min-width: 1920px) {
+  .title {
+    font-size: 2.5rem;
+  }
 }
 
 .icon-twitter {
@@ -96,6 +150,14 @@ main {
   background-image: url(/images/icon-youtube.svg);
   width: 20px;
   height: 20px;
+}
+
+.svg-container {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 100%;
 }
 
 .icon-arrow {
@@ -128,11 +190,25 @@ main {
 
 .section-one {
   padding-top: 25px;
+  padding-bottom: 30px;
+}
+@media only screen and (min-width: 1200px) {
+  .section-one {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .section-one {
+    grid-column-gap: 50px;
+  }
 }
 
 .section-one-card {
   border-radius: 8px;
   padding-top: 6px;
+  height: 5%;
 }
 
 .section-one-card-facebook {
@@ -177,6 +253,12 @@ main {
   margin-bottom: 25px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  height: 250px;
+}
+@media only screen and (min-width: 1920px) {
+  .section-one-content {
+    height: 350px;
+  }
 }
 
 .section-one-card-top {
@@ -187,6 +269,11 @@ main {
 .section-one-card-top .username {
   color: #8b97c6;
   margin-left: 8px;
+}
+@media only screen and (min-width: 1920px) {
+  .section-one-card-top .username {
+    margin-left: 12px;
+  }
 }
 
 .section-one-card-middle {
@@ -199,10 +286,20 @@ main {
   font-weight: 700;
   font-size: 3.5rem;
 }
+@media only screen and (min-width: 1920px) {
+  .section-one-card-middle .section-one-card-follower-number {
+    font-size: 6.5rem;
+  }
+}
 .section-one-card-middle .section-one-card-follower-text {
   color: #8b97c6;
   text-transform: uppercase;
   letter-spacing: 4.5px;
+}
+@media only screen and (min-width: 1920px) {
+  .section-one-card-middle .section-one-card-follower-text {
+    letter-spacing: 6.5px;
+  }
 }
 
 .section-one-card-bottom {
@@ -214,15 +311,37 @@ main {
   align-items: center;
 }
 
+.section-two {
+  margin-top: 20px;
+}
+@media only screen and (min-width: 1200px) {
+  .section-two {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .section-two {
+    grid-column-gap: 40px;
+  }
+}
+
 .sec-two-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: #252a41;
   border-radius: 5px;
   padding: 25px;
   margin-bottom: 20px;
+  height: 130px;
 }
-
-.sec-two-card-facebook {
-  margin-top: 25px;
+@media only screen and (min-width: 1920px) {
+  .sec-two-card {
+    height: 230px;
+    margin-bottom: 40px;
+  }
 }
 
 .sec-two-top {
@@ -242,6 +361,11 @@ main {
   color: white;
   font-weight: 700;
   font-size: 2rem;
+}
+@media only screen and (min-width: 1920px) {
+  .sec-two-bot .sec-two-num {
+    font-size: 4rem;
+  }
 }
 
 .sec-two-card-analytics {

@@ -1,15 +1,34 @@
 @use "sass:map";
 @import 'colors.scss';
 
+.section-two {
+  margin-top: 20px;
+
+  @media only screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    grid-column-gap: 40px;
+  }
+}
+
 .sec-two-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: map.get($dark-theme, 'card-background');
   border-radius: 5px;
   padding: 25px;
   margin-bottom: 20px;
-}
+  height: 130px;
 
-.sec-two-card-facebook {
-  margin-top: 25px;
+  @media only screen and (min-width: 1920px) {
+    height: 230px;
+    margin-bottom: 40px;
+  }
 }
 
 .sec-two-top {
@@ -30,6 +49,10 @@
     color: white;
     font-weight: 700;
     font-size: 2rem;
+
+    @media only screen and (min-width: 1920px) {
+      font-size: 4rem;
+    }
   }
 }
 
