@@ -4,13 +4,11 @@
 .section-one {
   padding-top: 25px;
   padding-bottom: 30px;
-
   @media only screen and (min-width: 1200px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
   }
-
   @media only screen and (min-width: 1920px) {
     grid-column-gap: 50px;
   }
@@ -24,7 +22,6 @@
 
 .section-one-card-facebook {
   background-color: map.get($primary-colors, 'facebook');
-
   .facebook-analytics {
     color: map.get($primary-colors, 'lime-green');
   }
@@ -32,7 +29,6 @@
 
 .section-one-card-twitter {
   background-color: map.get($primary-colors, 'twitter');
-
   .twitter-analytics {
     color: map.get($primary-colors, 'lime-green');
   }
@@ -40,7 +36,6 @@
 
 .section-one-card-instagram {
   background-image: map.get($primary-colors, 'instagram');
-
   .instagram-analytics {
     color: map.get($primary-colors, 'lime-green');
   }
@@ -48,7 +43,6 @@
 
 .section-one-card-youtube {
   background-color: map.get($primary-colors, 'youtube');
-
   .youtube-analytics {
     color: map.get($primary-colors, 'bright-red');
   }
@@ -69,7 +63,6 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   height: 250px;
-
   @media only screen and (min-width: 1920px) {
     height: 350px;
   }
@@ -79,12 +72,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   .username {
     color: map.get($dark-theme, 'sub-text');
     margin-left: 8px;
     @media only screen and (min-width: 1920px) {
-      margin-left: 12px;
+      margin-left: 1rem;
     }
   }
 }
@@ -93,12 +85,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   .section-one-card-follower-number {
     color: map.get($dark-theme, 'white-text');
     font-weight: 700;
     font-size: 3.5rem;
-
     @media only screen and (min-width: 1920px) {
       font-size: 6.5rem;
     }
@@ -108,7 +98,6 @@
     color: map.get($dark-theme, 'sub-text');
     text-transform: uppercase;
     letter-spacing: 4.5px;
-
     @media only screen and (min-width: 1920px) {
       letter-spacing: 6.5px;
     }
@@ -117,7 +106,6 @@
 
 .section-one-card-bottom {
   padding-bottom: 25px;
-
   .section-one-card-analytics {
     display: flex;
     justify-content: center;

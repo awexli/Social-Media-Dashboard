@@ -23,13 +23,20 @@ main {
   height: 100%;
   width: 100%;
   padding: 30px 20px;
-
   @media only screen and (min-width: 1200px) {
     padding: 40px 50px 30px 50px;
   }
-
   @media only screen and (min-width: 1920px) {
     padding: 100px 300px;
+  }
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  @media only screen and (min-width: 1920px) {
+    font-size: 2.5rem;
   }
 }
 
@@ -37,15 +44,8 @@ main {
   background-image: url(/images/icon-facebook.svg);
   width: 20px;
   height: 20px;
-}
-
-.title {
-  color: hsl(0, 0%, 100%);
-  font-size: 1.5rem;
-  font-weight: 700;
-
   @media only screen and (min-width: 1920px) {
-    font-size: 2.5rem;
+    transform: scale(1.5);
   }
 }
 
@@ -53,18 +53,27 @@ main {
   background-image: url(/images/icon-twitter.svg);
   width: 20px;
   height: 17px;
+  @media only screen and (min-width: 1920px) {
+    transform: scale(1.5);
+  }
 }
 
 .icon-instagram {
   background-image: url(/images/icon-instagram.svg);
   width: 20px;
   height: 20px;
+  @media only screen and (min-width: 1920px) {
+    transform: scale(1.5);
+  }
 }
 
 .icon-youtube {
   background-image: url(/images/icon-youtube.svg);
   width: 20px;
   height: 20px;
+  @media only screen and (min-width: 1920px) {
+    transform: scale(1.5);
+  }
 }
 
 .svg-container {
@@ -80,14 +89,23 @@ main {
   width: 8px;
   height: 4px;
   margin-right: 8px;
+  @media only screen and (min-width: 1920px) {
+    margin-right: 1rem;
+  }
 }
 
 .icon-up {
   background-image: url(/images/icon-up.svg);
+  @media only screen and (min-width: 1920px) {
+    transform: scale(2);
+  }
 }
 
 .icon-down {
   background-image: url(/images/icon-down.svg);
+  @media only screen and (min-width: 1920px) {
+    transform: scale(2);
+  }
 }
 
 .icon-svg {
