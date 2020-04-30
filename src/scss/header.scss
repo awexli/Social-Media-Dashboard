@@ -50,10 +50,6 @@ header {
   height: 24px;
   width: 50px;
   border-radius: 25px;
-  @media only screen and (min-width: 1920px) {
-    height: 48px;
-    width: 100px;
-  }
 }
 
 .toggle-circle {
@@ -64,10 +60,4 @@ header {
   top: 2px;
   left: 3px;
   border-radius: 50%;
-  @media only screen and (min-width: 1920px) {
-    height: 40px;
-    width: 40px;
-    top: 3px;
-    left: 5px;
-  }
 }

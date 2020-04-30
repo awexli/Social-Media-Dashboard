@@ -3,30 +3,35 @@
 
 .section-two {
   margin-top: 20px;
+
   @media only screen and (min-width: 1200px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
   }
-  @media only screen and (min-width: 1920px) {
-    grid-column-gap: 40px;
+}
+
+.sec-two-card-facebook,
+.sec-two-card-twitter,
+.sec-two-card-instagram,
+.sec-two-card-youtube {
+  margin-bottom: 20px;
+
+  :hover {
+    background-color: #333956;
+    cursor: pointer;
   }
 }
 
 .sec-two-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: map.get($dark-theme, 'card-background');
-  border-radius: 5px;
-  padding: 0 25px;
+  border-radius: 8px;
+  padding: 20% 10%;
   margin-bottom: 20px;
   height: 130px;
-  @media only screen and (min-width: 1920px) {
-    height: 230px;
-    margin-bottom: 40px;
-    padding: 0 45px;
-  }
 }
 
 .sec-two-top {
@@ -45,10 +50,6 @@
     color: white;
     font-weight: 700;
     font-size: 2rem;
-
-    @media only screen and (min-width: 1920px) {
-      font-size: 4rem;
-    }
   }
 }
 
@@ -56,27 +57,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  #fb-page-view-analytics {
-    color: map.get($primary-colors, 'lime-green');
-  }
-  #fb-likes-analytics {
-    color: map.get($primary-colors, 'bright-red');
-  }
-  #insta-page-view-analytics {
-    color: map.get($primary-colors, 'lime-green');
-  }
-  #insta-likes-analytics {
-    color: map.get($primary-colors, 'lime-green');
-  }
-  #twitter-retweet-analytics {
-    color: map.get($primary-colors, 'lime-green');
-  }
+
+  #fb-page-view-analytics,
+  #insta-page-view-analytics,
+  #insta-likes-analytics,
+  #twitter-retweet-analytics,
   #twitter-likes-analytics {
     color: map.get($primary-colors, 'lime-green');
   }
-  #youtube-view-analytics {
-    color: map.get($primary-colors, 'bright-red');
-  }
+
+  #fb-likes-analytics,
+  #youtube-view-analytics,
   #youtube-likes-analytics {
     color: map.get($primary-colors, 'bright-red');
   }

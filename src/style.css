@@ -14,23 +14,27 @@ body {
 }
 @media only screen and (min-width: 1920px) {
   body {
-    font-size: 25px;
+    font-size: 1rem;
   }
 }
 
 main {
-  height: 100%;
-  width: 100%;
-  padding: 30px 20px;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px 20px 0 20px;
 }
 @media only screen and (min-width: 1200px) {
   main {
-    padding: 40px 50px 30px 50px;
+    padding: 20% 8%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 1920px) {
   main {
-    padding: 100px 300px;
+    padding: 20% 13%;
   }
 }
 
@@ -39,21 +43,11 @@ main {
   font-size: 1.5rem;
   font-weight: 700;
 }
-@media only screen and (min-width: 1920px) {
-  .title {
-    font-size: 2.5rem;
-  }
-}
 
 .icon-facebook {
   background-image: url(/images/icon-facebook.svg);
   width: 20px;
   height: 20px;
-}
-@media only screen and (min-width: 1920px) {
-  .icon-facebook {
-    transform: scale(1.5);
-  }
 }
 
 .icon-twitter {
@@ -61,40 +55,17 @@ main {
   width: 20px;
   height: 17px;
 }
-@media only screen and (min-width: 1920px) {
-  .icon-twitter {
-    transform: scale(1.5);
-  }
-}
 
 .icon-instagram {
   background-image: url(/images/icon-instagram.svg);
   width: 20px;
   height: 20px;
 }
-@media only screen and (min-width: 1920px) {
-  .icon-instagram {
-    transform: scale(1.5);
-  }
-}
 
 .icon-youtube {
   background-image: url(/images/icon-youtube.svg);
   width: 20px;
   height: 20px;
-}
-@media only screen and (min-width: 1920px) {
-  .icon-youtube {
-    transform: scale(1.5);
-  }
-}
-
-.svg-container {
-  position: relative;
-  height: 0;
-  width: 100%;
-  padding: 0;
-  padding-bottom: 100%;
 }
 
 .icon-arrow {
@@ -103,37 +74,33 @@ main {
   height: 4px;
   margin-right: 8px;
 }
-@media only screen and (min-width: 1920px) {
-  .icon-arrow {
-    margin-right: 1rem;
-  }
-}
 
 .icon-up {
   background-image: url(/images/icon-up.svg);
 }
-@media only screen and (min-width: 1920px) {
-  .icon-up {
-    transform: scale(2);
-  }
-}
 
 .icon-down {
   background-image: url(/images/icon-down.svg);
-}
-@media only screen and (min-width: 1920px) {
-  .icon-down {
-    transform: scale(2);
-  }
 }
 
 .icon-svg {
   display: inline-block;
 }
 
+@media only screen and (min-width: 1920px) {
+  .icon-facebook,
+.icon-twitter,
+.icon-instagram,
+.icon-youtube,
+.icon-up,
+.icon-down {
+    transform: scale(1.2);
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 
 .attribution a {
@@ -198,12 +165,6 @@ header {
   width: 50px;
   border-radius: 25px;
 }
-@media only screen and (min-width: 1920px) {
-  .toggle-wrapper {
-    height: 48px;
-    width: 100px;
-  }
-}
 
 .toggle-circle {
   position: absolute;
@@ -213,14 +174,6 @@ header {
   top: 2px;
   left: 3px;
   border-radius: 50%;
-}
-@media only screen and (min-width: 1920px) {
-  .toggle-circle {
-    height: 40px;
-    width: 40px;
-    top: 3px;
-    left: 5px;
-  }
 }
 
 .section-one {
@@ -234,16 +187,15 @@ header {
     grid-column-gap: 20px;
   }
 }
-@media only screen and (min-width: 1920px) {
-  .section-one {
-    grid-column-gap: 50px;
-  }
-}
 
 .section-one-card {
   border-radius: 8px;
   padding-top: 6px;
-  height: 5%;
+  height: 3%;
+}
+.section-one-card :hover {
+  background-color: #333956;
+  cursor: pointer;
 }
 
 .section-one-card-facebook {
@@ -286,14 +238,9 @@ header {
   align-items: center;
   background-color: #252a41;
   margin-bottom: 25px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   height: 250px;
-}
-@media only screen and (min-width: 1920px) {
-  .section-one-content {
-    height: 350px;
-  }
 }
 
 .section-one-card-top {
@@ -321,20 +268,10 @@ header {
   font-weight: 700;
   font-size: 3.5rem;
 }
-@media only screen and (min-width: 1920px) {
-  .section-one-card-middle .section-one-card-follower-number {
-    font-size: 6.5rem;
-  }
-}
 .section-one-card-middle .section-one-card-follower-text {
   color: #8b97c6;
   text-transform: uppercase;
   letter-spacing: 4.5px;
-}
-@media only screen and (min-width: 1920px) {
-  .section-one-card-middle .section-one-card-follower-text {
-    letter-spacing: 6.5px;
-  }
 }
 
 .section-one-card-bottom {
@@ -356,28 +293,30 @@ header {
     grid-column-gap: 20px;
   }
 }
-@media only screen and (min-width: 1920px) {
-  .section-two {
-    grid-column-gap: 40px;
-  }
+
+.sec-two-card-facebook,
+.sec-two-card-twitter,
+.sec-two-card-instagram,
+.sec-two-card-youtube {
+  margin-bottom: 20px;
+}
+.sec-two-card-facebook :hover,
+.sec-two-card-twitter :hover,
+.sec-two-card-instagram :hover,
+.sec-two-card-youtube :hover {
+  background-color: #333956;
+  cursor: pointer;
 }
 
 .sec-two-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: #252a41;
-  border-radius: 5px;
-  padding: 0 25px;
+  border-radius: 8px;
+  padding: 20% 10%;
   margin-bottom: 20px;
   height: 130px;
-}
-@media only screen and (min-width: 1920px) {
-  .sec-two-card {
-    height: 230px;
-    margin-bottom: 40px;
-    padding: 0 45px;
-  }
 }
 
 .sec-two-top {
@@ -398,38 +337,21 @@ header {
   font-weight: 700;
   font-size: 2rem;
 }
-@media only screen and (min-width: 1920px) {
-  .sec-two-bot .sec-two-num {
-    font-size: 4rem;
-  }
-}
 
 .sec-two-card-analytics {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.sec-two-card-analytics #fb-page-view-analytics {
-  color: #1db489;
-}
-.sec-two-card-analytics #fb-likes-analytics {
-  color: #dc414c;
-}
-.sec-two-card-analytics #insta-page-view-analytics {
-  color: #1db489;
-}
-.sec-two-card-analytics #insta-likes-analytics {
-  color: #1db489;
-}
-.sec-two-card-analytics #twitter-retweet-analytics {
-  color: #1db489;
-}
+.sec-two-card-analytics #fb-page-view-analytics,
+.sec-two-card-analytics #insta-page-view-analytics,
+.sec-two-card-analytics #insta-likes-analytics,
+.sec-two-card-analytics #twitter-retweet-analytics,
 .sec-two-card-analytics #twitter-likes-analytics {
   color: #1db489;
 }
-.sec-two-card-analytics #youtube-view-analytics {
-  color: #dc414c;
-}
+.sec-two-card-analytics #fb-likes-analytics,
+.sec-two-card-analytics #youtube-view-analytics,
 .sec-two-card-analytics #youtube-likes-analytics {
   color: #dc414c;
 }

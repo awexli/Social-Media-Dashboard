@@ -9,15 +9,16 @@
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
   }
-  @media only screen and (min-width: 1920px) {
-    grid-column-gap: 50px;
-  }
 }
 
 .section-one-card {
   border-radius: 8px;
   padding-top: 6px;
-  height: 5%;
+  height: 3%;
+  :hover {
+    background-color: #333956;
+    cursor: pointer;
+  }
 }
 
 .section-one-card-facebook {
@@ -60,12 +61,9 @@
   align-items: center;
   background-color: map.get($dark-theme, 'card-background');
   margin-bottom: 25px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   height: 250px;
-  @media only screen and (min-width: 1920px) {
-    height: 350px;
-  }
 }
 
 .section-one-card-top {
@@ -89,18 +87,12 @@
     color: map.get($dark-theme, 'white-text');
     font-weight: 700;
     font-size: 3.5rem;
-    @media only screen and (min-width: 1920px) {
-      font-size: 6.5rem;
-    }
   }
 
   .section-one-card-follower-text {
     color: map.get($dark-theme, 'sub-text');
     text-transform: uppercase;
     letter-spacing: 4.5px;
-    @media only screen and (min-width: 1920px) {
-      letter-spacing: 6.5px;
-    }
   }
 }
 
