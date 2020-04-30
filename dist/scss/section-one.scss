@@ -5,16 +5,13 @@
   padding-top: 25px;
 }
 
+.section-one-card {
+  border-radius: 8px;
+  padding-top: 6px;
+}
+
 .section-one-card-facebook {
   background-color: map.get($primary-colors, 'facebook');
-  border-radius: 8px;
-  padding-top: 5px;
-
-  .icon-facebook {
-    background-image: url(/images/icon-facebook.svg);
-    width: 20px;
-    height: 20px;
-  }
 
   .facebook-analytics {
     color: map.get($primary-colors, 'lime-green');
@@ -23,14 +20,6 @@
 
 .section-one-card-twitter {
   background-color: map.get($primary-colors, 'twitter');
-  border-radius: 8px;
-  padding-top: 5px;
-
-  .icon-twitter {
-    background-image: url(/images/icon-twitter.svg);
-    width: 20px;
-    height: 17px;
-  }
 
   .twitter-analytics {
     color: map.get($primary-colors, 'lime-green');
@@ -39,14 +28,6 @@
 
 .section-one-card-instagram {
   background-image: map.get($primary-colors, 'instagram');
-  border-radius: 8px;
-  padding-top: 5px;
-
-  .icon-instagram {
-    background-image: url(/images/icon-instagram.svg);
-    width: 20px;
-    height: 20px;
-  }
 
   .instagram-analytics {
     color: map.get($primary-colors, 'lime-green');
@@ -55,14 +36,6 @@
 
 .section-one-card-youtube {
   background-color: map.get($primary-colors, 'youtube');
-  border-radius: 8px;
-  padding-top: 5px;
-
-  .icon-youtube {
-    background-image: url(/images/icon-youtube.svg);
-    width: 20px;
-    height: 20px;
-  }
 
   .youtube-analytics {
     color: map.get($primary-colors, 'bright-red');

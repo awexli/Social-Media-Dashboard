@@ -1,0 +1,72 @@
+@use "sass:map";
+@import 'colors.scss';
+
+.sec-two-card {
+  background-color: map.get($dark-theme, 'card-background');
+  border-radius: 5px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.sec-two-card-facebook {
+  margin-top: 25px;
+}
+
+.sec-two-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+
+  .card-title {
+    color: map.get($dark-theme, 'sub-text');
+  }
+}
+
+.sec-two-bot {
+  display: flex;
+  justify-content: space-between;
+
+  .sec-two-num {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+}
+
+.sec-two-card-analytics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #fb-page-view-analytics {
+    color: map.get($primary-colors, 'lime-green');
+  }
+
+  #fb-likes-analytics {
+    color: map.get($primary-colors, 'bright-red');
+  }
+
+  #insta-page-view-analytics {
+    color: map.get($primary-colors, 'lime-green');
+  }
+
+  #insta-likes-analytics {
+    color: map.get($primary-colors, 'lime-green');
+  }
+
+  #twitter-retweet-analytics {
+    color: map.get($primary-colors, 'lime-green');
+  }
+
+  #twitter-likes-analytics {
+    color: map.get($primary-colors, 'lime-green');
+  }
+
+  #youtube-view-analytics {
+    color: map.get($primary-colors, 'bright-red');
+  }
+
+  #youtube-likes-analytics {
+    color: map.get($primary-colors, 'bright-red');
+  }
+}

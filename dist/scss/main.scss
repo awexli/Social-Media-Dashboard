@@ -23,20 +23,49 @@ main {
   display: grid;
 }
 
-.icon-up {
+.icon-facebook {
+  background-image: url(/images/icon-facebook.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.icon-twitter {
+  background-image: url(/images/icon-twitter.svg);
+  width: 20px;
+  height: 17px;
+}
+
+.icon-instagram {
+  background-image: url(/images/icon-instagram.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.icon-youtube {
+  background-image: url(/images/icon-youtube.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.icon-arrow {
   display: inline-block;
-  background-image: url(/images/icon-up.svg);
   width: 8px;
   height: 4px;
   margin-right: 8px;
 }
 
+.icon-up {
+  background-image: url(/images/icon-up.svg);
+}
+
 .icon-down {
-  display: inline-block;
   background-image: url(/images/icon-down.svg);
-  width: 8px;
-  height: 4px;
-  margin-right: 8px;
 }
 
 .icon-svg {
