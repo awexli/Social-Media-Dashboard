@@ -45,25 +45,25 @@ main {
 }
 
 .icon-facebook {
-  background-image: url(/images/icon-facebook.svg);
+  background-image: url(../images/icon-facebook.svg);
   width: 20px;
   height: 20px;
 }
 
 .icon-twitter {
-  background-image: url(/images/icon-twitter.svg);
+  background-image: url(../images/icon-twitter.svg);
   width: 20px;
   height: 17px;
 }
 
 .icon-instagram {
-  background-image: url(/images/icon-instagram.svg);
+  background-image: url(../images/icon-instagram.svg);
   width: 20px;
   height: 20px;
 }
 
 .icon-youtube {
-  background-image: url(/images/icon-youtube.svg);
+  background-image: url(../images/icon-youtube.svg);
   width: 20px;
   height: 20px;
 }
@@ -76,11 +76,11 @@ main {
 }
 
 .icon-up {
-  background-image: url(/images/icon-up.svg);
+  background-image: url(../images/icon-up.svg);
 }
 
 .icon-down {
-  background-image: url(/images/icon-down.svg);
+  background-image: url(../images/icon-down.svg);
 }
 
 .icon-svg {
