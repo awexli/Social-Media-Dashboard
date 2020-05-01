@@ -1,9 +1,8 @@
 @use "sass:map";
-@import 'colors.scss';
+@import 'util.scss';
 
 header {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   @media only screen and (min-width: 1200px) {
     flex-direction: row;
     justify-content: space-between;
@@ -12,9 +11,6 @@ header {
 
 .title-wrapper {
   padding-bottom: 20px;
-  @media only screen and (min-width: 1200px) {
-    flex-grow: 50;
-  }
 }
 
 .title-subhead {
@@ -35,13 +31,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media only screen and (min-width: 1200px) {
-    flex-grow: 1;
-  }
 }
 
 #theme-name {
   color: map.get($dark-theme, 'sub-text');
+  @media only screen and (min-width: 1200px) {
+    padding-right: 12px;
+  }
 }
 
 .toggle-wrapper {
@@ -50,6 +46,9 @@ header {
   height: 24px;
   width: 50px;
   border-radius: 25px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .toggle-circle {

@@ -1,5 +1,5 @@
 @use "sass:map";
-@import 'colors.scss';
+@import 'util.scss';
 
 .section-two {
   margin-top: 20px;
@@ -44,10 +44,7 @@
 }
 
 .sec-two-card {
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  background-color: map.get($dark-theme, 'card-background');
   border-radius: 8px;
   padding: 20% 10%;
   margin-bottom: 20px;

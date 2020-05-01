@@ -10,7 +10,23 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  background-color: #1e202a;
+  height: 100vh;
+  background: #1e202a;
+}
+body::before {
+  content: "";
+  position: absolute;
+  background: #1f212e;
+  width: 100%;
+  height: 32%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+@media screen and (max-device-width: 1200px) {
+  body::before {
+    display: none;
+  }
 }
 @media screen and (min-device-width: 1920px) {
   body {
@@ -20,16 +36,20 @@ body {
 
 main {
   padding: 20px 20px 0 20px;
+  height: 100%;
 }
 @media screen and (min-device-width: 1200px) {
   main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 0;
-    margin: 2% 6% 2% 6%;
+    margin: 0 6%;
   }
 }
 @media screen and (min-device-width: 1920px) {
   main {
-    margin: 4% 10% 0 10%;
+    margin: 0 10%;
   }
 }
 
@@ -39,26 +59,32 @@ main {
   font-weight: 700;
 }
 
+.card-default {
+  display: flex;
+  flex-direction: column;
+  background-color: #252a41;
+}
+
 .icon-facebook {
-  background-image: url("/../images/icon-facebook.svg");
+  background-image: url("../images/icon-facebook.svg");
   width: 20px;
   height: 20px;
 }
 
 .icon-twitter {
-  background-image: url("/../images/icon-twitter.svg");
+  background-image: url("../images/icon-twitter.svg");
   width: 20px;
   height: 17px;
 }
 
 .icon-instagram {
-  background-image: url("/../images/icon-instagram.svg");
+  background-image: url("../images/icon-instagram.svg");
   width: 20px;
   height: 20px;
 }
 
 .icon-youtube {
-  background-image: url("/../images/icon-youtube.svg");
+  background-image: url("../images/icon-youtube.svg");
   width: 20px;
   height: 20px;
 }
@@ -71,11 +97,11 @@ main {
 }
 
 .icon-up {
-  background-image: url("/../images/icon-up.svg");
+  background-image: url("../images/icon-up.svg");
 }
 
 .icon-down {
-  background-image: url("/../images/icon-down.svg");
+  background-image: url("../images/icon-down.svg");
 }
 
 .icon-svg {
@@ -110,6 +136,7 @@ main {
 header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 @media only screen and (min-width: 1200px) {
   header {
@@ -120,11 +147,6 @@ header {
 
 .title-wrapper {
   padding-bottom: 20px;
-}
-@media only screen and (min-width: 1200px) {
-  .title-wrapper {
-    flex-grow: 50;
-  }
 }
 
 .title-subhead {
@@ -148,14 +170,14 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-@media only screen and (min-width: 1200px) {
-  .theme-wrapper {
-    flex-grow: 1;
-  }
-}
 
 #theme-name {
   color: #8b97c6;
+}
+@media only screen and (min-width: 1200px) {
+  #theme-name {
+    padding-right: 12px;
+  }
 }
 
 .toggle-wrapper {
@@ -164,6 +186,9 @@ header {
   height: 24px;
   width: 50px;
   border-radius: 25px;
+}
+.toggle-wrapper:hover {
+  cursor: pointer;
 }
 
 .toggle-circle {
@@ -237,11 +262,6 @@ header {
 }
 
 .section-one-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #252a41;
   margin-bottom: 25px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -265,6 +285,7 @@ header {
 .section-one-card-middle {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .section-one-card-middle .section-one-card-follower-number {
@@ -341,10 +362,7 @@ header {
 }
 
 .sec-two-card {
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  background-color: #252a41;
   border-radius: 8px;
   padding: 20% 10%;
   margin-bottom: 20px;
