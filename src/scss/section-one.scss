@@ -4,17 +4,20 @@
 .section-one {
   padding-top: 25px;
   padding-bottom: 30px;
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-device-width: 768px) {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+  }
+  @media only screen and (min-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 20px;
   }
 }
 
 .section-one-card {
   border-radius: 8px;
   padding-top: 6px;
-  height: 3%;
+  height: 5%;
   :hover {
     background-color: #333956;
     cursor: pointer;
@@ -63,7 +66,6 @@
   margin-bottom: 25px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  height: 250px;
 }
 
 .section-one-card-top {

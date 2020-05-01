@@ -3,12 +3,27 @@
 
 .section-two {
   margin-top: 20px;
-
   @media only screen and (min-width: 1200px) {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'facebook instagram'
+      'twitter youtube';
   }
+}
+
+.sec-two-card-facebook {
+  grid-area: facebook;
+}
+.sec-two-card-twitter {
+  grid-area: twitter;
+}
+.sec-two-card-instagram {
+  grid-area: instagram;
+}
+.sec-two-card-youtube {
+  grid-area: youtube;
 }
 
 .sec-two-card-facebook,
@@ -16,10 +31,15 @@
 .sec-two-card-instagram,
 .sec-two-card-youtube {
   margin-bottom: 20px;
-
   :hover {
     background-color: #333956;
     cursor: pointer;
+  }
+  @media only screen and (min-device-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -31,7 +51,7 @@
   border-radius: 8px;
   padding: 20% 10%;
   margin-bottom: 20px;
-  height: 130px;
+  height: 110px;
 }
 
 .sec-two-top {
