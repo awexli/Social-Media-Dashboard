@@ -4,7 +4,7 @@
 .section-one {
   padding-top: 25px;
   padding-bottom: 30px;
-  @media only screen and (min-device-width: 768px) {
+  @media only screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 30px;
@@ -15,10 +15,19 @@
 }
 
 .section-one-card {
-  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
   padding-top: 6px;
-  height: 5%;
-  :hover {
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.section-one-content {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+  &:hover {
     background-color: #333956;
     cursor: pointer;
   }
@@ -55,12 +64,6 @@
 .section-content {
   width: 100%;
   padding-top: 25px;
-}
-
-.section-one-content {
-  margin-bottom: 25px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
 .section-one-card-top {
