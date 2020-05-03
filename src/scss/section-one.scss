@@ -21,53 +21,49 @@
 }
 
 .section-one-card {
-  height: 228px;
-  position: relative;
-  padding: 6px 0 0 0;
-  border-radius: 8px;
   margin-bottom: 25px;
+  height: 222px;
+  // no idea why this works for gradient borders
+  border-top: solid 6px transparent;
+  border-radius: 8px;
   @media only screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
-}
-
-.section-one-content {
-  height: 222px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  &:hover {
-    background-color: #333956;
-    cursor: pointer;
+  .section-one-content {
+    // no idea why this works for gradient borders
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    &:hover {
+      background-color: #333956;
+      cursor: pointer;
+    }
   }
 }
 
 .section-one-card-facebook {
-  background-color: map.get($primary-colors, 'facebook');
+  background: map.get($primary-colors, 'facebook');
   .facebook-analytics {
     color: map.get($primary-colors, 'lime-green');
   }
 }
 
 .section-one-card-twitter {
-  background-color: map.get($primary-colors, 'twitter');
+  background: map.get($primary-colors, 'twitter');
   .twitter-analytics {
     color: map.get($primary-colors, 'lime-green');
   }
 }
 
 .section-one-card-instagram {
-  background-image: map.get($primary-colors, 'instagram');
+  // no idea why this works for gradient borders
+  background: map.get($primary-colors, 'instagram');
   .instagram-analytics {
     color: map.get($primary-colors, 'lime-green');
   }
 }
 
 .section-one-card-youtube {
-  background-color: map.get($primary-colors, 'youtube');
+  background: map.get($primary-colors, 'youtube');
   .youtube-analytics {
     color: map.get($primary-colors, 'bright-red');
   }

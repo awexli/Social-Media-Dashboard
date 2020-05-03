@@ -215,55 +215,48 @@ header {
 }
 
 .section-one-card {
-  height: 228px;
-  position: relative;
-  padding: 6px 0 0 0;
-  border-radius: 8px;
   margin-bottom: 25px;
+  height: 222px;
+  border-top: solid 6px transparent;
+  border-radius: 8px;
 }
 @media only screen and (min-width: 1200px) {
   .section-one-card {
     margin-bottom: 0;
   }
 }
-
-.section-one-content {
-  height: 222px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+.section-one-card .section-one-content {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
-.section-one-content:hover {
+.section-one-card .section-one-content:hover {
   background-color: #333956;
   cursor: pointer;
 }
 
 .section-one-card-facebook {
-  background-color: deepskyblue;
+  background: deepskyblue;
 }
 .section-one-card-facebook .facebook-analytics {
   color: #1db489;
 }
 
 .section-one-card-twitter {
-  background-color: #1ca0f2;
+  background: #1ca0f2;
 }
 .section-one-card-twitter .twitter-analytics {
   color: #1db489;
 }
 
 .section-one-card-instagram {
-  background-image: linear-gradient(90deg, #fdc468, #df4996);
+  background: linear-gradient(90deg, #fdc468, #df4996);
 }
 .section-one-card-instagram .instagram-analytics {
   color: #1db489;
 }
 
 .section-one-card-youtube {
-  background-color: #c4032a;
+  background: #c4032a;
 }
 .section-one-card-youtube .youtube-analytics {
   color: #dc414c;

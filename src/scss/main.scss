@@ -17,6 +17,7 @@ body {
   width: 100vw;
   padding: 5%;
   background: map.get($dark-theme, 'main-background');
+  // top background positioning
   &::before {
     content: '';
     position: absolute;
