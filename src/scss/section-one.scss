@@ -10,9 +10,6 @@
 .s1-card {
   position: relative;
   height: 224px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
   // important for border-radius to work
   // hides corners of &::after block
   overflow: hidden;

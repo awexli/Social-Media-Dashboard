@@ -1,86 +1,27 @@
 @use "sass:map";
 @import 'util.scss';
 
-.section-two {
-  margin-top: 20px;
-  @media only screen and (min-width: 1200px) {
-    display: grid;
-    grid-column-gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      'facebook instagram'
-      'twitter youtube';
+.s2-card {
+  height: 154px;
+
+  &.card-def {
+    align-items: inherit;
   }
 }
 
-.sec-two-card-facebook {
-  grid-area: facebook;
-}
-.sec-two-card-twitter {
-  grid-area: twitter;
-}
-.sec-two-card-instagram {
-  grid-area: instagram;
-}
-.sec-two-card-youtube {
-  grid-area: youtube;
-}
-
-.sec-two-card-facebook,
-.sec-two-card-twitter,
-.sec-two-card-instagram,
-.sec-two-card-youtube {
-  margin-bottom: 20px;
-  @media only screen and (min-device-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 30px;
-    margin-bottom: 0;
-  }
-}
-
-.sec-two-card {
-  justify-content: space-around;
-  border-radius: 8px;
-  padding: 2rem;
-  margin-bottom: 20px;
-}
-
-.sec-two-top {
+.s2-top-bot-default {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 25px;
-  .card-title {
-    color: map.get($dark-theme, 'sub-text');
-  }
+  align-items: center;
+  padding: 0 2rem;
 }
 
-.sec-two-bot {
-  display: flex;
-  justify-content: space-between;
-  .sec-two-num {
-    color: white;
-    font-weight: 700;
-    font-size: 2rem;
-  }
+.s2-card-count-text {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-.sec-two-card-analytics {
+.s2-card-analytics {
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  #fb-page-view-analytics,
-  #insta-page-view-analytics,
-  #insta-likes-analytics,
-  #twitter-retweet-analytics,
-  #twitter-likes-analytics {
-    color: map.get($primary-colors, 'lime-green');
-  }
-
-  #fb-likes-analytics,
-  #youtube-view-analytics,
-  #youtube-likes-analytics {
-    color: map.get($primary-colors, 'bright-red');
-  }
 }

@@ -34,3 +34,10 @@ $theme-transition: ease 0.2s;
   flex-direction: column;
   justify-content: center;
 }
+
+@mixin s2-top-bot-default {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
