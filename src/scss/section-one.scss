@@ -7,106 +7,80 @@
   }
 }
 
-.section-one {
-  padding-top: 25px;
-  padding-bottom: 30px;
-  @media only screen and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 30px;
-  }
-  @media only screen and (min-width: 1200px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+.s1-card {
+  position: relative;
+  height: 224px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  // important for border-radius to work
+  // hides corners of &::after block
+  overflow: hidden;
 
-.section-one-card {
-  margin-bottom: 25px;
-  height: 222px;
-  // no idea why this works for gradient borders
-  border-top: solid 6px transparent;
-  border-radius: 8px;
-  @media only screen and (min-width: 1200px) {
-    margin-bottom: 0;
+  &::after {
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    position: absolute;
   }
-  .section-one-content {
-    // no idea why this works for gradient borders
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    &:hover {
-      background-color: #333956;
-      cursor: pointer;
+
+  &.s1-card-facebook {
+    &::after {
+      background: map.get($primary-colors, facebook);
+    }
+  }
+
+  &.s1-card-twitter {
+    &::after {
+      background: map.get($primary-colors, twitter);
+    }
+  }
+
+  &.s1-card-instagram {
+    &::after {
+      background: map.get($primary-colors, instagram);
+    }
+  }
+
+  &.s1-card-youtube {
+    &::after {
+      background: map.get($primary-colors, youtube);
     }
   }
 }
 
-.section-one-card-facebook {
-  background: map.get($primary-colors, 'facebook');
-  .facebook-analytics {
-    color: map.get($primary-colors, 'lime-green');
-  }
-}
-
-.section-one-card-twitter {
-  background: map.get($primary-colors, 'twitter');
-  .twitter-analytics {
-    color: map.get($primary-colors, 'lime-green');
-  }
-}
-
-.section-one-card-instagram {
-  // no idea why this works for gradient borders
-  background: map.get($primary-colors, 'instagram');
-  .instagram-analytics {
-    color: map.get($primary-colors, 'lime-green');
-  }
-}
-
-.section-one-card-youtube {
-  background: map.get($primary-colors, 'youtube');
-  .youtube-analytics {
-    color: map.get($primary-colors, 'bright-red');
-  }
-}
-
-.section-content {
-  width: 100%;
-  padding-top: 25px;
-}
-
-.section-one-card-top {
+.s1-card-top {
   display: flex;
   align-items: center;
   justify-content: center;
+
   .username {
-    color: map.get($dark-theme, 'sub-text');
-    margin-left: 8px;
-    @media only screen and (min-width: 1920px) {
-      margin-left: 1rem;
-    }
+    margin-left: 10px;
   }
 }
 
-.section-one-card-middle {
-  @include flex-column;
+.s1-card-mid {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  .section-one-card-follower-number {
-    color: map.get($dark-theme, 'white-text');
+
+  .s1-card-count-text {
+    font-size: 3rem;
     font-weight: 700;
-    font-size: 3.5rem;
   }
-  .section-one-card-follower-text {
-    color: map.get($dark-theme, 'sub-text');
+
+  .s1-card-follow-text {
     text-transform: uppercase;
     letter-spacing: 4.5px;
   }
 }
 
-.section-one-card-bottom {
-  padding-bottom: 25px;
-  .section-one-card-analytics {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+// s1-card-bot
+.s1-card-bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

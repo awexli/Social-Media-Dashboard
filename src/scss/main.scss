@@ -18,7 +18,7 @@ body {
   padding: 5%;
   background: map.get($dark-theme, 'main-background');
   // top background positioning
-  &::before {
+  &:before {
     content: '';
     position: absolute;
     background: map.get($dark-theme, 'top-background');
@@ -51,6 +51,18 @@ main {
 .card-default {
   @include flex-column;
   background-color: map.get($dark-theme, 'card-background');
+  &:hover {
+    background-color: #333956;
+    cursor: pointer;
+  }
+}
+
+.card-light {
+  background-color: map.get($light-theme, 'card-background');
+  &:hover {
+    background-color: #e1e3f0;
+    cursor: pointer;
+  }
 }
 
 .icon-facebook {
@@ -94,6 +106,10 @@ main {
 
 .icon-svg {
   display: inline-block;
+}
+
+.light-background {
+  background-color: map.get($light-theme, 'main-background');
 }
 
 @media only screen and (min-width: 1920px) {

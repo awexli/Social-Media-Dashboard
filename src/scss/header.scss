@@ -9,15 +9,6 @@ header {
   }
 }
 
-.title-wrapper {
-  padding-bottom: 20px;
-}
-
-.title-subhead {
-  font-weight: 500;
-  color: map.get($dark-theme, 'sub-text');
-}
-
 .divider {
   height: 1px;
   background-color: map.get($dark-theme, 'sub-text');
@@ -27,13 +18,22 @@ header {
   }
 }
 
+.title-wrapper {
+  padding-bottom: 20px;
+}
+
+.title-subhead {
+  font-weight: 500;
+  color: map.get($dark-theme, 'sub-text');
+}
+
 .theme-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#theme-name {
+.theme-name {
   color: map.get($dark-theme, 'sub-text');
   @media only screen and (min-width: 1200px) {
     padding-right: 12px;

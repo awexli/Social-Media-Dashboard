@@ -15,7 +15,7 @@ body {
   padding: 5%;
   background: #1e202a;
 }
-body::before {
+body:before {
   content: "";
   position: absolute;
   background: #1f212e;
@@ -26,7 +26,7 @@ body::before {
   z-index: -1;
 }
 @media only screen and (max-width: 1200px) {
-  body::before {
+  body:before {
     display: none;
   }
 }
@@ -53,6 +53,18 @@ main {
   flex-direction: column;
   justify-content: center;
   background-color: #252a41;
+}
+.card-default:hover {
+  background-color: #333956;
+  cursor: pointer;
+}
+
+.card-light {
+  background-color: #f0f2fa;
+}
+.card-light:hover {
+  background-color: #e1e3f0;
+  cursor: pointer;
 }
 
 .icon-facebook {
@@ -98,6 +110,10 @@ main {
   display: inline-block;
 }
 
+.light-background {
+  background-color: white;
+}
+
 @media only screen and (min-width: 1920px) {
   .icon-facebook,
 .icon-twitter,
@@ -135,15 +151,6 @@ header {
   }
 }
 
-.title-wrapper {
-  padding-bottom: 20px;
-}
-
-.title-subhead {
-  font-weight: 500;
-  color: #8b97c6;
-}
-
 .divider {
   height: 1px;
   background-color: #8b97c6;
@@ -155,17 +162,26 @@ header {
   }
 }
 
+.title-wrapper {
+  padding-bottom: 20px;
+}
+
+.title-subhead {
+  font-weight: 500;
+  color: #8b97c6;
+}
+
 .theme-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#theme-name {
+.theme-name {
   color: #8b97c6;
 }
 @media only screen and (min-width: 1200px) {
-  #theme-name {
+  .theme-name {
     padding-right: 12px;
   }
 }
@@ -197,115 +213,63 @@ header {
   }
 }
 
-.section-one {
-  padding-top: 25px;
-  padding-bottom: 30px;
+.s1-card {
+  position: relative;
+  height: 224px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
 }
-@media only screen and (min-width: 768px) {
-  .section-one {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 30px;
-  }
+.s1-card::after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  position: absolute;
 }
-@media only screen and (min-width: 1200px) {
-  .section-one {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.section-one-card {
-  margin-bottom: 25px;
-  height: 222px;
-  border-top: solid 6px transparent;
-  border-radius: 8px;
-}
-@media only screen and (min-width: 1200px) {
-  .section-one-card {
-    margin-bottom: 0;
-  }
-}
-.section-one-card .section-one-content {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-.section-one-card .section-one-content:hover {
-  background-color: #333956;
-  cursor: pointer;
-}
-
-.section-one-card-facebook {
+.s1-card.s1-card-facebook::after {
   background: deepskyblue;
 }
-.section-one-card-facebook .facebook-analytics {
-  color: #1db489;
-}
-
-.section-one-card-twitter {
+.s1-card.s1-card-twitter::after {
   background: #1ca0f2;
 }
-.section-one-card-twitter .twitter-analytics {
-  color: #1db489;
-}
-
-.section-one-card-instagram {
+.s1-card.s1-card-instagram::after {
   background: linear-gradient(90deg, #fdc468, #df4996);
 }
-.section-one-card-instagram .instagram-analytics {
-  color: #1db489;
-}
-
-.section-one-card-youtube {
+.s1-card.s1-card-youtube::after {
   background: #c4032a;
 }
-.section-one-card-youtube .youtube-analytics {
-  color: #dc414c;
-}
 
-.section-content {
-  width: 100%;
-  padding-top: 25px;
-}
-
-.section-one-card-top {
+.s1-card-top {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.section-one-card-top .username {
-  color: #8b97c6;
-  margin-left: 8px;
-}
-@media only screen and (min-width: 1920px) {
-  .section-one-card-top .username {
-    margin-left: 1rem;
-  }
+.s1-card-top .username {
+  margin-left: 10px;
 }
 
-.section-one-card-middle {
+.s1-card-mid {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-.section-one-card-middle .section-one-card-follower-number {
-  color: white;
+.s1-card-mid .s1-card-count-text {
+  font-size: 3rem;
   font-weight: 700;
-  font-size: 3.5rem;
 }
-.section-one-card-middle .section-one-card-follower-text {
-  color: #8b97c6;
+.s1-card-mid .s1-card-follow-text {
   text-transform: uppercase;
   letter-spacing: 4.5px;
 }
 
-.section-one-card-bottom {
-  padding-bottom: 25px;
-}
-.section-one-card-bottom .section-one-card-analytics {
+.s1-card-bot {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .section-two {
@@ -341,13 +305,6 @@ header {
 .sec-two-card-instagram,
 .sec-two-card-youtube {
   margin-bottom: 20px;
-}
-.sec-two-card-facebook :hover,
-.sec-two-card-twitter :hover,
-.sec-two-card-instagram :hover,
-.sec-two-card-youtube :hover {
-  background-color: #333956;
-  cursor: pointer;
 }
 @media only screen and (min-device-width: 768px) {
   .sec-two-card-facebook,
@@ -403,6 +360,60 @@ header {
 .sec-two-card-analytics #youtube-view-analytics,
 .sec-two-card-analytics #youtube-likes-analytics {
   color: #dc414c;
+}
+
+.dark-theme-white-text {
+  color: white;
+}
+
+.green-text-analytics {
+  color: #1db489;
+}
+
+.red-text-analytics {
+  color: #dc414c;
+}
+
+.card-def {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background ease 0.2s, color ease 0.2s, transform ease 0.2s;
+}
+.card-def:hover {
+  transform: translateY(-5px);
+}
+.card-def.dark-theme {
+  background: #252a41;
+  color: #8b97c6;
+}
+.card-def.dark-theme:hover {
+  background: #333956;
+}
+.card-def.light-theme {
+  background: #f0f2fa;
+  color: #1e202a;
+}
+.card-def.light-theme:hover {
+  background: #e1e3f0;
+}
+
+.section-container {
+  margin: 20px 0;
+}
+@media only screen and (min-width: 480px) {
+  .section-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

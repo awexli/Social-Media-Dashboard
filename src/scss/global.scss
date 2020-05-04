@@ -1,4 +1,62 @@
+@use "sass:map";
+@import 'util.scss';
 @import 'main.scss';
 @import 'header.scss';
 @import 'section-one.scss';
 @import 'section-two.scss';
+
+.dark-theme-white-text {
+  color: map.get($dark-theme, white-text);
+}
+
+.green-text-analytics {
+  color: map.get($primary-colors, lime-green);
+}
+
+.red-text-analytics {
+  color: map.get($primary-colors, bright-red);
+}
+
+.card-def {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background $theme-transition, color $theme-transition,
+    transform $theme-transition;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &.dark-theme {
+    background: map.get($dark-theme, card-background);
+    color: map.get($dark-theme, sub-text);
+
+    &:hover {
+      background: map.get($dark-theme, hover);
+    }
+  }
+
+  &.light-theme {
+    background: map.get($light-theme, card-background);
+    color: map.get($light-theme, dark-text);
+
+    &:hover {
+      background: map.get($light-theme, hover);
+    }
+  }
+}
+
+.section-container {
+  @media only screen and (min-width: 480px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+  }
+  @media only screen and (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  margin: 20px 0;
+}
