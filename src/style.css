@@ -1,3 +1,114 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  transition: background ease 0.2s;
+  position: relative;
+  z-index: 0;
+}
+@media only screen and (min-width: 1920px) {
+  main {
+    padding: 0 10%;
+  }
+}
+main::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(6% + 220px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: background ease 0.2s;
+}
+@media only screen and (max-width: 1200px) {
+  main::before {
+    display: none;
+  }
+}
+main.dark-theme {
+  background: #1e202a;
+}
+main.dark-theme::before {
+  background: #1f212e;
+}
+main.dark-theme header {
+  color: #8b97c6;
+}
+main.dark-theme .toggle-wrapper {
+  background: linear-gradient(90deg, #378fe6, #3eda82);
+}
+main.dark-theme .toggle-circle {
+  background: #1e202a;
+}
+main.dark-theme .title {
+  color: white;
+}
+main.dark-theme .card-def {
+  background: #252a41;
+  color: #8b97c6;
+}
+main.dark-theme .card-def:hover {
+  background: #333956;
+}
+main.dark-theme .card-def .card-count-text {
+  color: white;
+}
+main.dark-theme .attribution {
+  color: white;
+}
+main.light-theme {
+  background: white;
+}
+main.light-theme::before {
+  background: #f5f7ff;
+}
+main.light-theme header {
+  color: #63687e;
+}
+main.light-theme .toggle-wrapper {
+  background: #aeb3cb;
+}
+main.light-theme .toggle-wrapper:hover {
+  background: linear-gradient(90deg, #378fe6, #3eda82);
+}
+main.light-theme .toggle-circle {
+  background: white;
+  transform: translateX(23px);
+}
+main.light-theme .title {
+  color: #1e202a;
+}
+main.light-theme .card-def {
+  background: #f0f2fa;
+  color: #63687e;
+}
+main.light-theme .card-def:hover {
+  background: #e1e3f0;
+}
+main.light-theme .card-def .card-count-text {
+  color: #1e202a;
+}
+main.light-theme .attribution {
+  color: #1e202a;
+}
+
 .theme-wrapper {
   display: flex;
   justify-content: space-between;
@@ -182,117 +293,6 @@ header {
   .section-container {
     grid-template-columns: repeat(4, 1fr);
   }
-}
-
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-main {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 5%;
-  transition: background ease 0.2s;
-  position: relative;
-  z-index: 0;
-}
-@media only screen and (min-width: 1920px) {
-  main {
-    padding: 0 10%;
-  }
-}
-main::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: calc(6% + 220px);
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: background ease 0.2s;
-}
-@media only screen and (max-width: 1200px) {
-  main::before {
-    display: none;
-  }
-}
-main.dark-theme {
-  background: #1e202a;
-}
-main.dark-theme::before {
-  background: #1f212e;
-}
-main.dark-theme header {
-  color: #8b97c6;
-}
-main.dark-theme .toggle-wrapper {
-  background: linear-gradient(90deg, #378fe6, #3eda82);
-}
-main.dark-theme .toggle-circle {
-  background: #1e202a;
-}
-main.dark-theme .title {
-  color: white;
-}
-main.dark-theme .card-def {
-  background: #252a41;
-  color: #8b97c6;
-}
-main.dark-theme .card-def:hover {
-  background: #333956;
-}
-main.dark-theme .card-def .card-count-text {
-  color: white;
-}
-main.dark-theme .attribution {
-  color: white;
-}
-main.light-theme {
-  background: white;
-}
-main.light-theme::before {
-  background: #f5f7ff;
-}
-main.light-theme header {
-  color: #63687e;
-}
-main.light-theme .toggle-wrapper {
-  background: #aeb3cb;
-}
-main.light-theme .toggle-wrapper:hover {
-  background: linear-gradient(90deg, #378fe6, #3eda82);
-}
-main.light-theme .toggle-circle {
-  background: white;
-  transform: translateX(23px);
-}
-main.light-theme .title {
-  color: #1e202a;
-}
-main.light-theme .card-def {
-  background: #f0f2fa;
-  color: #63687e;
-}
-main.light-theme .card-def:hover {
-  background: #e1e3f0;
-}
-main.light-theme .card-def .card-count-text {
-  color: #1e202a;
-}
-main.light-theme .attribution {
-  color: #1e202a;
 }
 
 .green-text-analytics {
