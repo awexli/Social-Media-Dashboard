@@ -51,14 +51,16 @@ main.dark-theme::before {
 main.dark-theme header {
   color: #8b97c6;
 }
+main.dark-theme .title,
+main.dark-theme .card-def .card-count-text,
+main.dark-theme .attribution {
+  color: white;
+}
 main.dark-theme .toggle-wrapper {
   background: linear-gradient(90deg, #378fe6, #3eda82);
 }
 main.dark-theme .toggle-circle {
   background: #1e202a;
-}
-main.dark-theme .title {
-  color: white;
 }
 main.dark-theme .card-def {
   background: #252a41;
@@ -67,17 +69,16 @@ main.dark-theme .card-def {
 main.dark-theme .card-def:hover {
   background: #333956;
 }
-main.dark-theme .card-def .card-count-text {
-  color: white;
-}
-main.dark-theme .attribution {
-  color: white;
-}
 main.light-theme {
   background: white;
 }
 main.light-theme::before {
   background: #f5f7ff;
+}
+main.light-theme .title,
+main.light-theme .card-def .card-count-text,
+main.light-theme .attribution {
+  color: #1e202a;
 }
 main.light-theme header {
   color: #63687e;
@@ -92,21 +93,12 @@ main.light-theme .toggle-circle {
   background: white;
   transform: translateX(23px);
 }
-main.light-theme .title {
-  color: #1e202a;
-}
 main.light-theme .card-def {
   background: #f0f2fa;
   color: #63687e;
 }
 main.light-theme .card-def:hover {
   background: #e1e3f0;
-}
-main.light-theme .card-def .card-count-text {
-  color: #1e202a;
-}
-main.light-theme .attribution {
-  color: #1e202a;
 }
 
 .theme-wrapper {
@@ -115,7 +107,7 @@ main.light-theme .attribution {
   align-items: center;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 568px) {
   .theme-name {
     padding-right: 12px;
   }
@@ -138,15 +130,16 @@ main.light-theme .attribution {
   top: 2px;
   left: 3px;
   border-radius: 50%;
-  transition: transform ease 0.2s;
+  transition: transform ease 0.2s, background ease 0.2s;
 }
 
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: color ease 0.2s;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 568px) {
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -220,12 +213,22 @@ header {
   align-items: center;
 }
 .s1-card-mid .card-count-text {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
+}
+@media only screen and (min-width: 768px) {
+  .s1-card-mid .card-count-text {
+    font-size: 3rem;
+  }
 }
 .s1-card-mid .s1-card-follow-text {
   text-transform: uppercase;
-  letter-spacing: 4.5px;
+  letter-spacing: 2.5px;
+}
+@media only screen and (min-width: 768px) {
+  .s1-card-mid .s1-card-follow-text {
+    letter-spacing: 4.5px;
+  }
 }
 
 .s1-card-bot {
@@ -249,8 +252,13 @@ header {
 }
 
 .s2-card-bot .card-count-text {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 700;
+}
+@media only screen and (min-width: 768px) {
+  .s2-card-bot .card-count-text {
+    font-size: 2rem;
+  }
 }
 
 .s2-card-analytics {
@@ -282,7 +290,7 @@ header {
 .section-container {
   margin: 20px 0;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 568px) {
   .section-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -5,7 +5,7 @@
 }
 
 .theme-name {
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 568px) {
     padding-right: 12px;
   }
 }
@@ -28,5 +28,5 @@
   top: 2px;
   left: 3px;
   border-radius: 50%;
-  transition: transform $theme-transition;
+  transition: transform $theme-transition, background $theme-transition;
 }

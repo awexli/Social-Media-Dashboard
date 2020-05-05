@@ -37,16 +37,18 @@ main {
       color: map.get($dark-theme, sub-text);
     }
 
+    .title,
+    .card-def .card-count-text,
+    .attribution {
+      color: map.get($dark-theme, white-text);
+    }
+
     .toggle-wrapper {
       background: map.get($dark-theme, toggle);
     }
 
     .toggle-circle {
       background: map.get($dark-theme, main-background);
-    }
-
-    .title {
-      color: map.get($dark-theme, white-text);
     }
 
     .card-def {
@@ -56,23 +58,21 @@ main {
       &:hover {
         background: map.get($dark-theme, hover);
       }
-
-      .card-count-text {
-        color: map.get($dark-theme, white-text);
-      }
-    }
-
-    .attribution {
-      color: map.get($dark-theme, white-text);
     }
   }
 
   &.light-theme {
+    background: map.get($light-theme, main-background);
+
     &::before {
       background: map.get($light-theme, top-background);
     }
 
-    background: map.get($light-theme, main-background);
+    .title,
+    .card-def .card-count-text,
+    .attribution {
+      color: map.get($light-theme, dark-text);
+    }
 
     header {
       color: map.get($light-theme, sub-text);
@@ -91,10 +91,6 @@ main {
       transform: translateX(23px);
     }
 
-    .title {
-      color: map.get($light-theme, dark-text);
-    }
-
     .card-def {
       background: map.get($light-theme, card-background);
       color: map.get($light-theme, sub-text);
@@ -102,14 +98,6 @@ main {
       &:hover {
         background: map.get($light-theme, hover);
       }
-
-      .card-count-text {
-        color: map.get($light-theme, dark-text);
-      }
-    }
-
-    .attribution {
-      color: map.get($light-theme, dark-text);
     }
   }
 }

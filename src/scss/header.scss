@@ -2,8 +2,9 @@
 
 header {
   @include flex-column;
+  transition: color $theme-transition;
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 568px) {
     flex-direction: row;
     justify-content: space-between;
   }
