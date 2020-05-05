@@ -10,7 +10,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <title>Frontend Mentor | Social Media Dashboard</title>
+    <title>Frontend Challenge | Social Media Dashboard</title>
     <link rel="stylesheet" href="./src/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap"
@@ -18,32 +18,29 @@
     />
   </head>
   <body>
-    <main>
+    <main class="dark-theme">
       <div class="top-wrapper">
         <header>
           <div class="title-wrapper">
-            <span class="title white-text">Social Media Dashboard</span>
-            <p class="title-subhead sub-text">Total Followers: 23,004</p>
+            <h1 class="title">Social Media Dashboard</h1>
+            <p class="title-subhead">Total Followers: 23,004</p>
           </div>
           <div class="divider"></div>
           <div class="theme-wrapper">
             <p class="theme-name sub-text">Dark Mode</p>
-            <div class="toggle-wrapper">
+            <div class="toggle-wrapper" aria-label="Toggle Dark Mode">
               <div class="toggle-circle"></div>
             </div>
           </div>
         </header>
         <div class="section-container">
-          <div class="s1-card s1-card-facebook card-def dark-theme">
+          <div class="s1-card s1-card-facebook card-def">
             <div class="s1-card-top">
               <span class="icon-facebook icon-svg"></span>
               <span id="fb-username" class="username">@nathanf</span>
             </div>
             <div class="s1-card-mid">
-              <div
-                id="fb-supporter-count"
-                class="s1-card-count-text dark-theme-white-text"
-              >
+              <div id="fb-supporter-count" class="card-count-text">
                 1987
               </div>
               <p class="s1-card-follow-text">Followers</p>
@@ -56,16 +53,13 @@
               </span>
             </div>
           </div>
-          <div class="s1-card s1-card-twitter card-def dark-theme">
+          <div class="s1-card s1-card-twitter card-def">
             <div class="s1-card-top">
               <span class="icon-twitter icon-svg"></span>
               <span id="twitter-username" class="username">@nathanf</span>
             </div>
             <div class="s1-card-mid">
-              <div
-                id="twitter-supporter-count"
-                class="s1-card-count-text dark-theme-white-text"
-              >
+              <div id="twitter-supporter-count" class="card-count-text">
                 1044
               </div>
               <p class="s1-card-follow-text">Followers</p>
@@ -78,16 +72,13 @@
               </span>
             </div>
           </div>
-          <div class="s1-card s1-card-instagram card-def dark-theme">
+          <div class="s1-card s1-card-instagram card-def">
             <div class="s1-card-top">
               <span class="icon-instagram icon-svg"></span>
               <span id="instagram-username" class="username">@nathanf</span>
             </div>
             <div class="s1-card-mid">
-              <div
-                id="instagram-supporter-count"
-                class="s1-card-count-text dark-theme-white-text"
-              >
+              <div id="instagram-supporter-count" class="card-count-text">
                 11k
               </div>
               <p class="s1-card-follow-text">Followers</p>
@@ -100,16 +91,13 @@
               </span>
             </div>
           </div>
-          <div class="s1-card s1-card-youtube card-def dark-theme">
+          <div class="s1-card s1-card-youtube card-def">
             <div class="s1-card-top">
               <span class="icon-youtube icon-svg"></span>
               <span id="youtube-username" class="username">Nathan F.</span>
             </div>
             <div class="s1-card-mid">
-              <div
-                id="youtube-supporter-count"
-                class="s1-card-count-text dark-theme-white-text"
-              >
+              <div id="youtube-supporter-count" class="card-count-text">
                 8239
               </div>
               <p class="s1-card-follow-text">Subscribers</p>
@@ -125,19 +113,15 @@
         </div>
       </div>
       <div class="bottom-wrapper">
-        <div class="title dark-theme-white-text">Overview - Today</div>
+        <h2 class="title">Overview - Today</h2>
         <div class="section-container">
-          <div class="s2-card s2-card-facebook card-def dark-theme">
+          <div class="s2-card s2-card-facebook card-def">
             <div class="s2-card-top s2-top-bot-default">
               <span class="s2-card-title">Page Views</span>
               <span class="icon-facebook icon-svg"></span>
             </div>
             <div class="s2-card-bot s2-top-bot-default">
-              <span
-                id="fb-views-count"
-                class="s2-card-count-text dark-theme-white-text"
-                >87</span
-              >
+              <span id="fb-views-count" class="card-count-text">87</span>
               <div class="s2-card-analytics">
                 <span class="icon-up icon-arrow"></span>
                 <span class="green-text-analytics"
@@ -146,17 +130,13 @@
               </div>
             </div>
           </div>
-          <div class="s2-card s2-card-facebook card-def dark-theme">
+          <div class="s2-card s2-card-facebook card-def">
             <div class="s2-card-top s2-top-bot-default">
               <span class="s2-card-title">Likes</span>
               <span class="icon-facebook icon-svg"></span>
             </div>
             <div class="s2-card-bot s2-top-bot-default">
-              <span
-                id="fb-likes-count"
-                class="s2-card-count-text dark-theme-white-text"
-                >52</span
-              >
+              <span id="fb-likes-count" class="card-count-text">52</span>
               <div class="s2-card-analytics">
                 <span class="icon-down icon-arrow"></span>
                 <span class="red-text-analytics"
@@ -165,15 +145,13 @@
               </div>
             </div>
           </div>
-          <div class="s2-card s2-card-instagram card-def dark-theme">
+          <div class="s2-card s2-card-instagram card-def">
             <div class="s2-card-top s2-top-bot-default">
               <span class="s2-card-title">Profile Views</span>
               <span class="icon-instagram icon-svg"></span>
             </div>
             <div class="s2-card-bot s2-top-bot-default">
-              <span
-                id="instagram-views-count"
-                class="s2-card-count-text dark-theme-white-text"
+              <span id="instagram-views-count" class="card-count-text"
                 >52k</span
               >
               <div class="s2-card-analytics">
@@ -184,15 +162,13 @@
               </div>
             </div>
           </div>
-          <div class="s2-card s2-card-instagram card-def dark-theme">
+          <div class="s2-card s2-card-instagram card-def">
             <div class="s2-card-top s2-top-bot-default">
               <span class="s2-card-title">Likes</span>
               <span class="icon-instagram icon-svg"></span>
             </div>
             <div class="s2-card-bot s2-top-bot-default">
-              <span
-                id="instagram-likes-count"
-                class="s2-card-count-text dark-theme-white-text"
+              <span id="instagram-likes-count" class="card-count-text"
                 >5426</span
               >
               <div class="s2-card-analytics">
@@ -203,15 +179,13 @@
               </div>
             </div>
           </div>
-          <div class="s2-card s2-card-twitter card-def dark-theme">
+          <div class="s2-card s2-card-twitter card-def">
             <div class="s2-card-top s2-top-bot-default">
               <span class="s2-card-title">Retweets</span>
               <span class="icon-twitter icon-svg"></span>
             </div>
             <div class="s2-card-bot s2-top-bot-default">
-              <span
-                id="twitter-retweets-count"
-                class="s2-card-count-text dark-theme-white-text"
+              <span id="twitter-retweets-count" class="card-count-text"
                 >117</span
               >
               <div class="s2-card-analytics">
@@ -222,17 +196,13 @@
               </div>
             </div>
           </div>
-          <div class="s2-card s2-card-twitter card-def dark-theme">
+          <div class="s2-card s2-card-twitter card-def">
             <div class="s2-card-top s2-top-bot-default">
               <span class="s2-card-title">Likes</span>
               <span class="icon-twitter icon-svg"></span>
             </div>
             <div class="s2-card-bot s2-top-bot-default">
-              <span
-                id="twitter-likes-count"
-                class="s2-card-count-text dark-theme-white-text"
-                >507</span
-              >
+              <span id="twitter-likes-count" class="card-count-text">507</span>
               <div class="s2-card-analytics">
                 <span class="icon-up icon-arrow"></span>
                 <span class="green-text-analytics"
@@ -241,17 +211,13 @@
               </div>
             </div>
           </div>
-          <div class="s2-card s2-card-youtube card-def dark-theme">
+          <div class="s2-card s2-card-youtube card-def">
             <div class="s2-card-top s2-top-bot-default">
               <span class="s2-card-title">Likes</span>
               <span class="icon-youtube icon-svg"></span>
             </div>
             <div class="s2-card-bot s2-top-bot-default">
-              <span
-                id="youtube-likes-count"
-                class="s2-card-count-text dark-theme-white-text"
-                >1407</span
-              >
+              <span id="youtube-likes-count" class="card-count-text">1407</span>
               <div class="s2-card-analytics">
                 <span class="icon-down icon-arrow"></span>
                 <span class="red-text-analytics"
@@ -260,17 +226,13 @@
               </div>
             </div>
           </div>
-          <div class="s2-card s2-card-youtube card-def dark-theme">
+          <div class="s2-card s2-card-youtube card-def">
             <div class="s2-card-top s2-top-bot-default">
               <span class="s2-card-title">Total Views</span>
               <span class="icon-youtube icon-svg"></span>
             </div>
             <div class="s2-card-bot s2-top-bot-default">
-              <span
-                id="youtube-views-count"
-                class="s2-card-count-text dark-theme-white-text"
-                >107</span
-              >
+              <span id="youtube-views-count" class="card-count-text">107</span>
               <div class="s2-card-analytics">
                 <span class="icon-down icon-arrow"></span>
                 <span class="red-text-analytics"
@@ -282,14 +244,15 @@
         </div>
       </div>
       <div class="attribution">
-        Challenge by
+        Coded by
         <a
-          href="https://www.frontendmentor.io?ref=challenge"
+          accesskey="s"
+          id="source-code"
+          href="https://github.com/awexli/Social-Media-Dashboard"
           target="_blank"
           rel="noopener noreferrer"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://github.com/awexli/Social-Media-Dashboard">Alex Li</a>
+          >Alex Li</a
+        >
       </div>
     </main>
     <script src="./src/script.js"></script>

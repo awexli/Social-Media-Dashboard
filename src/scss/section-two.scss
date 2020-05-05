@@ -1,6 +1,3 @@
-@use "sass:map";
-@import 'util.scss';
-
 .s2-card {
   height: 154px;
 
@@ -16,9 +13,11 @@
   padding: 0 2rem;
 }
 
-.s2-card-count-text {
-  font-size: 2rem;
-  font-weight: 700;
+.s2-card-bot {
+  .card-count-text {
+    font-size: 2rem;
+    font-weight: 700;
+  }
 }
 
 .s2-card-analytics {
