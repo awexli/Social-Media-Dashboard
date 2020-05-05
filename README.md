@@ -1,4 +1,4 @@
-# Frontend Mentor - [Social media dashboard with theme switcher](https://awexli.github.io/Social-Media-Dashboard/)
+# [Frontend Mentor](https://www.frontendmentor.io/) - Social media dashboard with theme switcher ([Demo](https://awexli.github.io/Social-Media-Dashboard/))
 
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
