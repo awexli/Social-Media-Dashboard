@@ -22,7 +22,7 @@ All the required assets are in the `/images` folder. The assets were already opt
 
 There is also a `style-guide.md` file, which contains the information such as color palette and fonts.
 
-The `/src` folder inlcudes my `/scss` folder, `script.js`, and `style.css` file. In the `/scss` folder, I tried my best to seperate each `.scss` file into their own components. This allowed for better resuablity and easier code maintanence.
+The `/src` folder inlcudes my `/scss` folder, `/components` folder, and `style.css` file. I tried my best to seperate each `.scss` & `.js` files into their own components. This allowed for better resuablity and easier code maintanence.
 
 ## What I learned
 
@@ -41,4 +41,4 @@ The `/src` folder inlcudes my `/scss` folder, `script.js`, and `style.css` file.
 - HTML5
 - CSS3
 - Sass
-- JavaScript
+- JavaScript HTML DOM
