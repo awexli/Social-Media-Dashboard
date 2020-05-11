@@ -1,5 +1,5 @@
 import createHTML from './util';
-import sectionTwoContainer from './section-two-container';
+import sectionTwoContainer from './section-containers/section-two-container';
 
 const bottomWrapper = (() => {
   const bottomWrapperDiv = createHTML('div', 'bottom-wrapper', null, null);

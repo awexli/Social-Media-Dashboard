@@ -1,8 +1,8 @@
-import createHTML from './util';
-import sectionOneCardFacebook from './s1-card/s1-card-facebook';
-import sectionOneCardTwitter from './s1-card/s1-card-twitter';
-import sectionOneCardInstagram from './s1-card/s1-card-instagram';
-import sectionOneCardYoutube from './s1-card/s1-card-youtube';
+import createHTML from '../util';
+import sectionOneCardFacebook from '../s1-card/s1-card-facebook';
+import sectionOneCardTwitter from '../s1-card/s1-card-twitter';
+import sectionOneCardInstagram from '../s1-card/s1-card-instagram';
+import sectionOneCardYoutube from '../s1-card/s1-card-youtube';
 
 const sectionOneContainer = (() => {
   const sectionOneContainerDiv = createHTML(

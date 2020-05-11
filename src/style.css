@@ -114,6 +114,7 @@ main.light-theme .card-def:hover {
 }
 
 .toggle-wrapper {
+  outline: none;
   position: relative;
   height: 24px;
   width: 50px;

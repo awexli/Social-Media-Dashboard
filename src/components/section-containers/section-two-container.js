@@ -1,8 +1,8 @@
-import createHTML from './util';
-import sectionTwoCardFacebook from './s2-card/s2-card-facebook';
-import sectionTwoCardInstagram from './s2-card/s2-card-instagram';
-import sectionTwoCardTwitter from './s2-card/s2-card-twitter';
-import sectionTwoCardYoutube from './s2-card/s2-card-youtube';
+import createHTML from '../util';
+import sectionTwoCardFacebook from '../s2-card/s2-card-facebook';
+import sectionTwoCardInstagram from '../s2-card/s2-card-instagram';
+import sectionTwoCardTwitter from '../s2-card/s2-card-twitter';
+import sectionTwoCardYoutube from '../s2-card/s2-card-youtube';
 
 const sectionTwoContainer = (() => {
   const sectionTwoContainerDiv = createHTML(

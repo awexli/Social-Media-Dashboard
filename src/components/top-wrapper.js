@@ -1,6 +1,6 @@
 import createHTML from './util';
 import header from './header';
-import sectionContainer from './section-one-container';
+import sectionContainer from './section-containers/section-one-container';
 
 const topWrapper = (() => {
   const topWrapperDiv = createHTML('div', 'top-wrapper', null, null);
